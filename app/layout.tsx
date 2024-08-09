@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col min-h-screen">
+      <body className="flex flex-col min-h-screen bg-gradient-to-r from-pink-100 to-blue-200">
         <Header />
         {children}
         <Toaster duration={8000} position="bottom-right" />

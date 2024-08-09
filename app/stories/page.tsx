@@ -10,14 +10,14 @@ function Stories() {
   const stories: Story[] = getAllStories();
 
   return (
-    <div className="p-10 max-w-7xl mx-auto">
+    <div className="p-10 pt-0 max-w-7xl mx-auto">
         {stories.length === 0 && <p>No stories found.</p>}
     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
       {stories.map((story) => (
         <Link 
         key={story.story}
         href={`${story.story}`}
-        className="border rounded-lg cursor-pointer hover:shadow-lg hover:border-purple-500 transition-all duration-300 ease-in-out"
+        className="border border-white rounded-lg cursor-pointer hover:shadow-lg hover:border-purple-500 transition-all duration-300 ease-in-out"
         >
             <div className="relative">
                 <p className="absolute flex items-center top-0 right-0 bg-white text-purple-500 font-bold p-3 rounded-lg m-2 text-sm">
